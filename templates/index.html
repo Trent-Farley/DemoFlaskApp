@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Duplicate Remover</title>
+</head>
+<body>
+    <h1>
+        Welcome To Duplicate Remover
+    </h1>
+        {% if nums %}
+            <h4 style="text-align: center">
+                Here is the list:
+            </h4>
+        {% endif %}
+        <ul style="text-align: center">
+            {% for num in nums %}
+            <li> {{num}} </li>
+            {% endfor %}
+        </ul>
+</body>
+</html>
